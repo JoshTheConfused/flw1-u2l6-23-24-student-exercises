@@ -12,16 +12,19 @@ favs.artist = "Bob Dylan";
 favs.food = "Sushi";
 favs.animal = "Orca";
 favs.number = 10;
+favs.subject = "Math";
+favs.drink = "Water";
 
 // CHALLENGE
 // Look up object destructuring - you can also go to this link: https://www.w3schools.com/react/react_es6_destructuring.asp
 //  - See if you can save the properties of the object intro separate variables using this.
-const {artist, food, animal, number} = favs;
+const {artist, food, animal, number, subject, drink} = favs;
 console.log(artist);
 console.log(food);
 console.log(animal);
 console.log(number);
-
+console.log(subject);
+console.log(drink);
 
 // DON'T CHANGE THIS CODE
 for (let key in favs) {
