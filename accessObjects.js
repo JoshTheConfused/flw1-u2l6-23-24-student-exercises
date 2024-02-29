@@ -1,8 +1,8 @@
 const pupInfo = {
-pupName: "Buddy",
-age: 1,
-favFood: "popcorn",
-favActivity: "fetch"
+  pupName: "Buddy",
+  age: 1,
+  favFood: "popcorn",
+  favActivity: "fetch"
 }
 
 // 1. When we click the button, it doesn't show our info! 
@@ -12,9 +12,9 @@ favActivity: "fetch"
 
 document.querySelector("button").addEventListener("click", () => {
     document.querySelector(".info").innerHTML = 
-    `<p>This is (insert name)! 
-    They are (insert age) months old and love to eat (insert favorite food). 
-    Their favorite thing to do is (insert favorite activity). 
+    `<p>This is ${pupInfo.pupName}! 
+    They are ${pupInfo.age} months old and love to eat ${pupInfo.favFood}. 
+    Their favorite thing to do is ${pupInfo.favActivity}. 
     They're perfect.</p>`
   })
   
